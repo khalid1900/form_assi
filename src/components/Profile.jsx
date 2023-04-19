@@ -61,7 +61,7 @@ const Profile = () => {
 
         <IconButton color="primary" aria-label="upload picture" component="label">
         <FormLabel>image</FormLabel>
-        <input hidden accept="image/*" value={user.photo} onChange={(e)=>handleChange(setUser(e.target.files[0]))} type="file" />
+        {/* <input hidden accept="image/*" value={user.photo} onChange={(e)=>handleChange(setUser(e.target.files[0]))} type="file" /> */}
         <PhotoCamera />
       </IconButton>
 
@@ -153,7 +153,7 @@ const Profile = () => {
             {list.map((item,index)=>{
                 return(
                     <>
-                    <img src={URL.createObjectURL(item.photo)} alt='pic'/>
+                    {/* <img src={URL.createObjectURL(item.photo)} alt='pic'/> */}
                     <p>{item.storeName}</p>
                     <p>{item.properties}</p>
                     <p>{item.email}</p>
